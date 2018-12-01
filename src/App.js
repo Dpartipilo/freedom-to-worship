@@ -32,7 +32,7 @@ const Navbar = () => (
 
 const Index = () => <h2>Home</h2>;
 const Footer = () => <div className="footer">
-  <h2>Footer</h2>
+  <h2>Footer test</h2>
 </div>;
 const About = () => <div><h2 onClick={console.log('hola!')}>About us</h2></div>;
 const Users = () => <h2>Users</h2>;
