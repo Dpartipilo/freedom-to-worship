@@ -17,13 +17,26 @@ const Navbar = () => (
   <Router>
     <div>
       <nav className="navbar">
-        <Link to="/">Home</Link>
-        <Link to="/about/">About</Link>
-        <Link to="/users/">Users</Link>
-        <Link to="/galery/">Galery</Link>
+        <ul>
+          <Link className="navlink" to="/">
+            Home
+          </Link>
+
+          <Link className="navlink" to="/about/">
+            About
+          </Link>
+
+          <Link className="navlink" to="/users/">
+            Users
+          </Link>
+
+          <Link className="navlink" to="/galery/">
+            Galery
+          </Link>
+        </ul>
       </nav>
 
-      <Route path="/" exact component={Index} />
+      <Route path="/" exact component={Home} />
       <Route path="/about/" component={About} />
       <Route path="/users/" component={Users} />
       <Route path="/galery/" component={Galery} />
@@ -31,7 +44,20 @@ const Navbar = () => (
   </Router>
 );
 
-const Index = () => <h2>Home</h2>;
+const Home = () => (
+  <div>
+    <Carousel />
+  </div>
+);
+
+const Carousel = () => (
+  <div className="container">
+    <div className="carousel">
+      <h2>Home</h2>
+    </div>
+  </div>
+);
+
 const Galery = () => <h2>Galery</h2>;
 const Footer = () => (
   <div className="footer">
