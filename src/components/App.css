@@ -1,14 +1,16 @@
 
 html, body{
+  font-size: 18px;
   margin: 0;
 }
 
 .navbar{
   background-color: gray;
-
+  height: 80px;
 }
 
 ul {
+  height: 80px;
   margin:0;
   display: flex;
   align-items: center;
@@ -16,21 +18,25 @@ ul {
 }
 
 .navlink{
+  font-weight: 600;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   text-decoration: none;
   flex: 1;
+  transition: all 0.7s;
 }
 
 .navlink:hover {
   color:white;
-  background-color: red;
+  background-color: rgb(88, 87, 87);
 }
 
 .container{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-items: center;
   margin:5%
@@ -39,7 +45,7 @@ ul {
 .carousel{
   flex:1;
   width: 90vw;
-  height: 90vh;
+  height: 70vh;
   background-color: gray; 
   box-shadow: 5px 10px 18px #888888;
 }
@@ -47,19 +53,27 @@ ul {
 .commingEvents{
   flex:1;
   display: flex;
+  flex-wrap: wrap;
   width: 90vw;
-  height: 90vh;
-  background-color: blue;
+  min-height: 400px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
 }
 
 .singleEvent{
-  flex:1;
-  height: 500px;
-  width:20%;
+  flex-basis:40%;
+  height: 350px;
   background-color: gray;
   margin:20px;
+  padding:20px;
+  box-shadow: 3px 7px 15px #888888;
+  color: white;
+  transition: all 0.3s;
 }
-
+.singleEvent:hover{
+  transform: scale(1.03);
+  box-shadow: 12px 20px 45px #888888;
+}
 .footer{
   height: 100px;
   background-color: gray;
