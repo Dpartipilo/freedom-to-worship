@@ -31,11 +31,13 @@ const Navbar = () => (
         <Route path="/about/" component={About} />
         <Route path="/users/" component={ContactUs} />
         <Route path="/galery/" component={Galery} />
+        <Route path="/events/:event_id" component={SingleEventPage} />
       </Switch>
     </div>
   </Router>
 );
 
 const ContactUs = () => <h2>Contact Us</h2>;
+const SingleEventPage = () => <h2>Single Event</h2>;
 
 export default Navbar;

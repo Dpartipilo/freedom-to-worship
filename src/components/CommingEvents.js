@@ -43,7 +43,7 @@ class CommingEvents extends Component {
         <h1>Comming Events</h1>
         <div className="commingEvents">
           {this.state.aEvents.map(singleEvent => (
-            <SingleEvent {...singleEvent} />
+            <SingleEvent key={singleEvent.id} {...singleEvent} />
           ))}
         </div>
       </div>

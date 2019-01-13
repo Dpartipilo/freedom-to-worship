@@ -61,19 +61,24 @@ ul {
 }
 
 .singleEvent{
+  padding:20px;
+}
+
+.singleEventContainer{
   flex-basis:40%;
   height: 350px;
   background-color: gray;
   margin:20px;
-  padding:20px;
   box-shadow: 3px 7px 15px #888888;
   color: white;
   transition: all 0.3s;
 }
-.singleEvent:hover{
+
+.singleEventContainer:hover{
   transform: scale(1.03);
   box-shadow: 12px 20px 45px #888888;
 }
+
 .footer{
   height: 100px;
   background-color: gray;
