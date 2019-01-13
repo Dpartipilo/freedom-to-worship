@@ -17,9 +17,9 @@ const Navbar = () => (
             About
           </Link>
 
-          {/* <Link className="navlink" to="/users">
-            Users
-          </Link> */}
+          <Link className="navlink" to="/contact-us">
+            Contact Us
+          </Link>
 
           <Link className="navlink" to="/galery">
             Galery
@@ -29,19 +29,13 @@ const Navbar = () => (
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about/" component={About} />
-        {/* <Route path="/users/" component={Users} /> */}
+        <Route path="/users/" component={ContactUs} />
         <Route path="/galery/" component={Galery} />
       </Switch>
     </div>
   </Router>
 );
 
-// const Galery = () => <h2>Galery</h2>;
-// const About = () => (
-//   <div>
-//     <h2 onClick={console.log("hola Amigos!!")}>About kkjavsasdasdasus</h2>
-//   </div>
-// );
-// const Users = () => <h2>Users</h2>;
+const ContactUs = () => <h2>Contact Us</h2>;
 
 export default Navbar;
